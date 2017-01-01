@@ -15,12 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textFieldResult: UITextField!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -28,9 +26,9 @@ class ViewController: UIViewController {
 
 
     @IBAction func factorize(_ sender: Any) {
-       guard let textFieldAsString = textField.text else { return
-     }
+       
     
+   
         
         func factor(number: Int) -> String {    //
             var result = ""                     //
@@ -43,9 +41,9 @@ class ViewController: UIViewController {
                     }
                 }
             }
-            return result                       //
+            return result
         }
-          textFieldResult.text = "who knows"
+        
     }
   
 
