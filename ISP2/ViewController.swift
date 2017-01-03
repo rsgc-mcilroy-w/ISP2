@@ -30,21 +30,18 @@ class ViewController: UIViewController {
         //I: Retrive the textField as an Int
         let textFieldasInt = textField.text
         let numberFormatter = NumberFormatter()
-        var amountAsNumber = numberFormatter.number(from: textFieldasInt!)
-        
-        
+        let amountAsNumber = numberFormatter.number(from: textFieldasInt!)
+      
         // The intiger is called amount as number
         //II: find the remainder of textField divided by everything between 1 and itself
         
+        var possibleFactors = 1...amountAsNumber?.intValue
         
-        let i = 1...amountAsNumber
+        if possibleFactors % amountAsNumber = 0 {
+            print (possibleFactors / amountAsNumber)
+        }
+       
         
-                    //III: Print all the scenarios where there is a remainder of 0 in the label
-                }
-                
-                
-                
-                
                 
 }
 
